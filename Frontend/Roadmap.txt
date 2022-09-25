@@ -1,0 +1,19 @@
+1)HTML.
+2)CSS.
+2.1)SASS.
+3)JavaScript.
+4)TypeScript.
+5)React.
+6)Next.js.
+7)Redux.
+8)Redux-Saga.
+9)next-translate.
+10)chakra.
+11)styled components.
+12)React Hook Form.
+13)Vercel - хостинг приложения.
+14)React Fast Refresh - тестирование.
+15)Cloudinary.
+16)Sendgrid.
+17)Mailchimp.
+18)Sendbird.
