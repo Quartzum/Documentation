@@ -2,9 +2,10 @@
 //4 -> "-4, -3, -2, -1, 0, 1, 2, 3, 4" 
 //2 -> " -2, -1, 0, 1, 2"
 
-Console.WriteLine("Введите число N: ");
+Console.Write("Введите число N: ");
 int N = int.Parse(Console.ReadLine());
 
-for(int i = -N; i<N+1; i++){
+for(int i = -N; i < N+1; i++){
     Console.Write(i + ", ");
 }
+
