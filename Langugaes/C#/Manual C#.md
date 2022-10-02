@@ -1,3 +1,10 @@
+![C#](https://zavistnik.com/wp-content/uploads/2020/12/Si-sharp.jpg):
+
+# Chapte One - Введение в C#.
+
+
+
+
 `Console.ReadLine()` - считать данные из консоли и перейти на новую строку
 
 `Console.WriteLine()` - вывод данных в консоль и переход на новую строку.
