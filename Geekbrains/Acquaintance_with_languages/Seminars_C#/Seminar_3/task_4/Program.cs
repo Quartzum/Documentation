@@ -16,10 +16,9 @@ public class Programm
 public class SquareNumber{
     int number;
 
-    public int GetNumber(){
+    public void GetNumber(){
         Console.Write("Введите целое число: ");
         number = int.Parse(Console.ReadLine());
-        return number;
     }
     public void WriteTableSquare(){
         while(number >= 1){
