@@ -1,10 +1,40 @@
-﻿/*Задача 19
+﻿void Main()
+{
+Console.Clear();
+Console.WriteLine("Start");
 
-Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+int number = GetNumber();
+int[]array = new int [5];
 
-14212 -> нет
+int GetNumber()
+{
+    Console.Write("Введите пятизначное число: ");
+    return int.Parse(Console.ReadLine());
+}
 
-12821 -> да
+int[] FillArray(int[]arg1, int arg2)
+    {
+        int i = 0;
+        while(i < 5)
+        {
+            int residue = arg2 % 10;
+            arg2 /=10;
+            arg1[i] = residue;
+            i++;
+        }
+        return arg1;
+    }
+int[] newArray = array;
+void CheckArray(int[]arg1, int arg2)
+{
+    if(arg1[0] == arg1[4] & arg1[1] == arg1[3]) Console.WriteLine($"{arg2} - палиндром!");
+    else Console.WriteLine($"{arg2} - не палиндром!");
+}
 
-23432 -> да
-*/
+FillArray(array, number);
+CheckArray(newArray, number);
+
+Console.WriteLine("End");
+}
+
+Main();
