@@ -1,8 +1,0 @@
-sass-convert style.sass style.scss - конвертация sass в scss, и наооборот.
-(Данная команда не генерирует CSS-файл. Для компиляции в CSS-файл используйте команду sass.)
-
-sass input.scss output.css - компилирует код из scss в css.
-sass --watch input.scss output.css - компилирует код из scss в css, и следит за измениями в файлах при сохранении.
-
-sass --watch app/sass:public/stylesheets - компилирует код scss папки в css папку.
-
