@@ -38,14 +38,13 @@ int [] Composition(int[]arg1)
     int[]NewArray = new int[arg1.Length];
     int StartCount = 0;
     int EndCount = arg1.Length -1;
-    int CountNewArray = 0;
     
-    while(StartCount < arg1.Length)
+    while(StartCount < arg1.Length / 2)
     {
-        NewArray[CountNewArray] = arg1[StartCount] * arg1[EndCount];
+        NewArray[StartCount] = arg1[StartCount] * arg1[EndCount];
         StartCount++;
         EndCount--;
-        CountNewArray++;
+        
     }
     return NewArray;
 }
