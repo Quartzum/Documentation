@@ -1,3 +1,0 @@
-yarn --version
-yarn create react-app first-app
-npm install --g yarn - установить пакетный менеджер Yarn.

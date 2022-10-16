@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/Geekbrains/Examples/Example001_HelloConcole/Example001_HelloConcole.csproj",
+                "${workspaceFolder}/tasks/task_3/task_3.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/Geekbrains/Examples/Example001_HelloConcole/Example001_HelloConcole.csproj",
+                "${workspaceFolder}/tasks/task_3/task_3.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/Geekbrains/Examples/Example001_HelloConcole/Example001_HelloConcole.csproj"
+                "${workspaceFolder}/tasks/task_3/task_3.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
