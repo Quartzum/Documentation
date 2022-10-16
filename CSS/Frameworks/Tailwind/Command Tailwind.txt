@@ -1,0 +1,37 @@
+1.Tailwind+React.
+==================================================================================================
+1)npx create-react-app my-project
+cd my-project
+
+Создаем и переходим в проект.
+
+2)npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+Устанавливаем Tailwind в проект со всеми зависимостями. Генерируем файлы tailwind.config.js and postcss.config.js.
+
+3)
+
+/** @type {import('tailwindcss').Config} */ 
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+Вносим эти строчки кода в файл tailwind.config.js
+
+4)
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+Вносим эти строчки кода в файл index.css.
+
+
+После всего это Tailwind будет работать в проекте React.
