@@ -35,7 +35,7 @@ int [] CreateArray(int arg1, int arg2, int arg3)
 }
 int [] Composition(int[]arg1)
 {
-    int[]NewArray = new int[arg1.Length / 2];
+    int[]NewArray = new int[arg1.Length / 2 + 1];
     int StartCount = 0;
     int EndCount = arg1.Length -1;
     
@@ -44,8 +44,9 @@ int [] Composition(int[]arg1)
         NewArray[StartCount] = arg1[StartCount] * arg1[EndCount];
         StartCount++;
         EndCount--;
-        
     }
+    if(arg1.Length % 2 == 0) return NewArray;
+    if(arg1.Length % 2 == 1) NewArray[StartCount] = arg1[StartCount];
     return NewArray;
 }
 Main();

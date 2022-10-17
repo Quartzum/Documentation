@@ -38,14 +38,8 @@ double DifferenceNumbers(double[]arg1)
     foreach (double item in arg1)
     {
         if(max < item) max = item;
-    }
-    Console.WriteLine(max);
-    foreach (double item in arg1)
-    {
         if(min > item) min = item;
     }
-    Console.WriteLine(min);
-    
     return result = max - min;
 }
 Main();
