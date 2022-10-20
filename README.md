@@ -18,7 +18,6 @@
 ## 6. In folder homework:
 - task_1, task_2, task_3;
 
-
 `If will some problems with homework or branch - sending me on email - Tempert@yandex.ru`
 
 ## Thank you for your attention!
