@@ -1,39 +1,26 @@
-﻿/*
-Задача 42: Напишите программу, которая будет преобразовывать десятичное число в двоичное.
-45 -> 101101
-3  -> 11
-2  -> 10
+﻿using System.Text;
 
-*/
-
-void Main()
+class Program
 {
-    Console.Clear();
-    Console.WriteLine("Start");
-    ChangeNumber(GetNumber());
-    Console.WriteLine();
-    Console.WriteLine("End");
-}
-
-int GetNumber()
-{
-    Console.Write("Введите число: ");
-    return int.Parse(Console.ReadLine());
-}
-
-void ChangeNumber(int arg1)
-{
-    string empty =
-    for(int i = 0; arg1 > 0; i++)
+    static string DecimalToBinary(uint decimalNumber)
     {
-        int result = arg1 % 2;
-        arg1 /= 2;
-        empty[i] = result;
+        var binaryNumber = string.Empty;
+        while (decimalNumber > 0)
+        {
+            binaryNumber = (decimalNumber % 2) + binaryNumber;
+            decimalNumber /= 2;
+        }
+
+        return binaryNumber;
     }
-    for (int i = 0; i < empty.Length; i++)
+    
+    private static void Main(string[] args)
     {
-        Console.Write($"{empty[]}");
+        Console.OutputEncoding = Encoding.UTF8;
+        Console.Write("Введите число в десятичной системе: ");
+        var decNum = uint.Parse(Console.ReadLine());
+        var binNum = DecimalToBinary(decNum);
+        Console.WriteLine("{0} => {1}", decNum, binNum);
+        Console.ReadLine();
     }
 }
-
-Main();
