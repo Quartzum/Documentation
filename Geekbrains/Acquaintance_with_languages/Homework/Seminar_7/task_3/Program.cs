@@ -12,9 +12,9 @@ void Main()
 {
     Console.Clear();
     Console.WriteLine("Start");
-    int[,]fill = FillArray(GetSizeRows(),GetSizeColumns(),GetMinValue(),GetMaxValue());
+    int[,] fill = FillArray(GetSizeRows(), GetSizeColumns(), GetMinValue(), GetMaxValue());
     PrintArray(fill);
-
+    PrintAverageArifmetic(fill);
     Console.WriteLine("End");
 }
 int GetSizeRows()
@@ -37,31 +37,44 @@ int GetMaxValue()
     Console.Write("Введите максимальное значение диапазона массива: ");
     return int.Parse(Console.ReadLine());
 }
-int[,]FillArray(int rows, int columns, int min, int max)
+int[,] FillArray(int rows, int columns, int min, int max)
 {
-    int[,]empty = new int [rows, columns];
+    int[,] empty = new int[rows, columns];
     for (int i = 0; i < rows; i++)
     {
         for (int j = 0; j < columns; j++)
         {
-           empty[i,j] = new Random().Next(min, max); 
+            empty[i, j] = new Random().Next(min, max);
         }
     }
     return empty;
 }
-void PrintArray(int[,]fill)
+void PrintArray(int[,] fill)
 {
     for (int i = 0; i < fill.GetLength(0); i++)
     {
         for (int j = 0; j < fill.GetLength(1); j++)
         {
-           Console.Write($"{fill[i,j]} <-"); 
+            Console.Write($"{fill[i, j]} <-");
         }
         Console.WriteLine();
-    } 
+    }
 }
-void PrintAverageArifmetic(int[,]fill)
+void PrintAverageArifmetic(int[,] fill)
 {
-    
+    double[] arif = new double[fill.GetLength(1)];
+
+    for (int i = 0; i < fill.GetLength(1); i++)
+    {
+        for (int j = 0; j < fill.GetLength(0); j++)
+        {
+            arif[i] += fill[j,i];
+            Console.WriteLine($"Итерация:{i} - {arif[i]}");
+        }
+    }
+    foreach (double item in arif)
+    {
+        Console.WriteLine($"{item / fill.GetLength(0)} <-");
+    }
 }
 Main();

@@ -77,9 +77,10 @@ void SearchNumber(int[,]fill, int number)
     {
         for (int j = 0; j < fill.GetLength(1); j++)
         {
-            if(number == fill[i,j])Console.WriteLine($"Число {number} есть на позиции ({i};{j}).");
+            if(number == fill[i,j])Console.WriteLine($"Число {number} есть на позиции ({i};{j})!!");
+            else Console.WriteLine($"Числа {number} на позиции ({i};{j}) нет!");
         }
     }
-    Console.WriteLine($"Числа {number} в массиве нет!");
+    
 }
 Main();
