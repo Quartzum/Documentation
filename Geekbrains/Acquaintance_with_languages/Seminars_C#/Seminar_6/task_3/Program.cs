@@ -20,7 +20,7 @@ class Program
         Console.Write("Введите число в десятичной системе: ");
         var decNum = uint.Parse(Console.ReadLine());
         var binNum = DecimalToBinary(decNum);
-        Console.WriteLine("{0} => {1}", decNum, binNum);
+        Console.WriteLine($"{decNum} => {binNum}");
         Console.ReadLine();
     }
 }
