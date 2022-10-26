@@ -47,3 +47,4 @@ double b = Convert.ToDouble(str, numberFormatInfo);//При конвертаци
 Для того, чтобы решить проблему мы можем воспользоваться
 пространством имен using System.Globalization;
 */
+
