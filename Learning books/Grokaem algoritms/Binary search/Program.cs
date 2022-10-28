@@ -1,15 +1,15 @@
-﻿// Классический линейный алгоритм
+﻿// Простой алгоритм
 
-void Linear()
+void Simple()
 {
     Console.Clear();
     Console.WriteLine("Start Linear Algoritm");
     int[]array = {1,2,3,4,5,6,7,8,9};
     int searching = 9;
-    Console.WriteLine($"Количество итераций линейного алгоритма = {LinearSearch(array, searching)}");
+    Console.WriteLine($"Количество итераций линейного алгоритма = {SimpleSearch(array, searching)}");
     Console.WriteLine("End Linear Algoritm");
 }
-int LinearSearch(int[]array, int searching)
+int SimpleSearch(int[]array, int searching)
 {
     int count = 0;
     int result = 1;
@@ -22,7 +22,7 @@ int LinearSearch(int[]array, int searching)
     }
     return -1;
 }
-Linear();
+Simple();
 
 //Бинарный алгоритм
 void Binary()
@@ -53,3 +53,11 @@ int BinarySearch(int[]array, int searching)
     
 }
 Binary();
+
+/*О-большое линейного алгоритма - О(n). Т.е., если у нас есть массив из 100 элементов,
+то сложность его выполнения будет - 100 итераций.
+О-большое бинарного алгоритма - 7 итераций.
+
+О-большое - самый худший сценарий, при котором будет найдено искомое. Т.е. за какое количество максимальных
+итераций будет найдено искомое число.
+*/
