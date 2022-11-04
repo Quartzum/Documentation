@@ -15,7 +15,7 @@ int[] QuickSort(int[] array, int minIndex, int maxIndex)
     if (minIndex >= maxIndex) return array;
 
     int pivot = FindPivot(array, minIndex, maxIndex);
-    Console.WriteLine($"Опорный индекс - {pivot}");
+    
     QuickSort(array, minIndex, pivot - 1);
     QuickSort(array, pivot + 1, maxIndex);
 
