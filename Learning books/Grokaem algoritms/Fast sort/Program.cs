@@ -23,7 +23,7 @@ int[] QuickSort(int[] array, int minIndex, int maxIndex)
 }
 int FindPivot(int[] array, int minIndex, int maxIndex) // Передаем - массив, минимальный индекс, максимальный индекс.
 {
-    int pivot = minIndex - 1; //Опорная позиция.
+    int pivot = minIndex - 1; //Опорная позиция
     int temp = 0; // Переменная для хранения опорной позиции при перестановки.
     
     for (int i = minIndex; i < maxIndex; i++)
