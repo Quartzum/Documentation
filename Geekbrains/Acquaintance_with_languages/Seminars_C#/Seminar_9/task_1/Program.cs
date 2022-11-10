@@ -26,6 +26,10 @@ int ShowNaturalNumbers(int number)
 
     Console.Write($"{number} <- ");
 
+    int some = 10;
+
     return ShowNaturalNumbers(number - 1);
+
+    
 }
 Main();
