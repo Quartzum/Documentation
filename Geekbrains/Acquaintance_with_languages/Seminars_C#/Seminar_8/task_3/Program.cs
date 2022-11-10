@@ -75,7 +75,6 @@ void CalculateCountNumberInArray(int[,] array)
             foreach (var item in temp)
             {
                 if (array[i, j] == item) countTemp++;
-                else if (countTemp >= 2) break;
             }
 
             if (countTemp >= 2)
