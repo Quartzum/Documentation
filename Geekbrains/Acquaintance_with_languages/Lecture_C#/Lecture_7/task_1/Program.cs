@@ -12,5 +12,5 @@ string NumberRec(int a, int b)
     if(a <= b) return $"{a}" + NumberRec(a + 1, b);
     else return String.Empty;
 }
-Console.WriteLine(NumbersFor(1, 10));
-Console.WriteLine(NumbersFor(1, 10));
+Console.WriteLine(NumberFor(1, 10));
+Console.WriteLine(NumberRec(1, 10));
