@@ -2,7 +2,7 @@
 /* ------------------------------------------------------- */
 
 body {
-  background: url(img/background.jpg);
+  background: url("img/background.jpg");
   font-size: 10px;
   text-align: center;
   color: black;
@@ -36,7 +36,7 @@ header {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   margin: 5px;
-  background-image: url(img/background_block.jpg);
+  background-image: url("img/background_block.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -49,19 +49,19 @@ header {
 }
 
 .pers {
-  background-image: url(http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQ0suktJEBOYsgOoqYzT-aO4ZmHdxrxVkiyXSmiPmazPwoaHJQtL1sX-sXcPdMldK_m);
+  background-image: url("http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQ0suktJEBOYsgOoqYzT-aO4ZmHdxrxVkiyXSmiPmazPwoaHJQtL1sX-sXcPdMldK_m");
 }
 
 .siam {
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/16/Siamese_cat_Vaillante.JPG);
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/1/16/Siamese_cat_Vaillante.JPG");
 }
 
 .mein_kun{
-    background-image: url(https://pet-portal.ru/wp-content/uploads/main-coon.jpg);
+    background-image: url("https://pet-portal.ru/wp-content/uploads/main-coon.jpg");
 }
 
 .british{
-    background-image: url(https://elite-british.by/wp-content/uploads/2018/12/DSC_0103.jpg);
+    background-image: url("https://elite-british.by/wp-content/uploads/2018/12/DSC_0103.jpg");
 }
 
 /* Footer */
