@@ -1,3 +1,4 @@
-let temp_celsia = prompt("Введите температуру в цельсиях: ")
-let temp_farengeit = Math.round((9/5) * temp_celsia + 32)
-alert(`Цельсия: ${temp_celsia}, Фаренгейт: ${temp_farengeit}.`)
+let tempCelsia = prompt("Введите температуру в цельсиях: ")
+let tempCelsiaRound = Math.round(tempCelsia)
+let tempFarengeit = (9/5) * tempCelsiaRound + 32
+alert(`Цельсия: ${tempCelsia}, Фаренгейт: ${tempFarengeit}.`)
